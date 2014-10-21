@@ -1,6 +1,6 @@
-# Firebase Login Demo for Android
+# HUNGR
 
-This is a demo application to demonstrate how to use Firebase's Login in your Android app.
+This is based on Firebase Login.
 
 ### Setup
 1. Sign up and create a new [Firebase](https://www.firebase.com)
