@@ -1,4 +1,4 @@
-package com.firebase.samples.logindemo;
+package io.melle.hungr;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -43,7 +43,7 @@ import java.util.Map;
  * Facebook provides its own API via the {@link com.facebook.widget.LoginButton}.
  * Google provides its own API via the {@link com.google.android.gms.common.api.GoogleApiClient}.
  * Twitter requires us to use a Web View to authenticate, see
- *      {@link com.firebase.samples.logindemo.TwitterOAuthActivity}
+ *      {@link io.melle.hungr.TwitterOAuthActivity}
  * Email/Password is provided using {@link com.firebase.client.Firebase}
  * Anonymous is provided using {@link com.firebase.client.Firebase}
  */
@@ -177,25 +177,25 @@ public class MainActivity extends ActionBarActivity implements
         /***************************************
          *               PASSWORD              *
          ***************************************/
-        mPasswordLoginButton = (Button)findViewById(R.id.login_with_password);
-        mPasswordLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                loginWithPassword();
-            }
-        });
+//        mPasswordLoginButton = (Button)findViewById(R.id.login_with_password);
+//        mPasswordLoginButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                loginWithPassword();
+//            }
+//        });
 
         /***************************************
          *              ANONYMOUSLY            *
          ***************************************/
         /* Load and setup the anonymous login button */
-        mAnonymousLoginButton = (Button)findViewById(R.id.login_anonymously);
-        mAnonymousLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                loginAnonymously();
-            }
-        });
+//        mAnonymousLoginButton = (Button)findViewById(R.id.login_anonymously);
+//        mAnonymousLoginButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                loginAnonymously();
+//            }
+//        });
 
         /***************************************
          *               GENERAL               *
@@ -335,8 +335,8 @@ public class MainActivity extends ActionBarActivity implements
             mFacebookLoginButton.setVisibility(View.GONE);
             mGoogleLoginButton.setVisibility(View.GONE);
             mTwitterLoginButton.setVisibility(View.GONE);
-            mPasswordLoginButton.setVisibility(View.GONE);
-            mAnonymousLoginButton.setVisibility(View.GONE);
+//            mPasswordLoginButton.setVisibility(View.GONE);
+//            mAnonymousLoginButton.setVisibility(View.GONE);
             mLoggedInStatusTextView.setVisibility(View.VISIBLE);
             /* show a provider specific status text */
             String name = null;
@@ -358,8 +358,8 @@ public class MainActivity extends ActionBarActivity implements
             mFacebookLoginButton.setVisibility(View.VISIBLE);
             mGoogleLoginButton.setVisibility(View.VISIBLE);
             mTwitterLoginButton.setVisibility(View.VISIBLE);
-            mPasswordLoginButton.setVisibility(View.VISIBLE);
-            mAnonymousLoginButton.setVisibility(View.VISIBLE);
+//            mPasswordLoginButton.setVisibility(View.VISIBLE);
+//            mAnonymousLoginButton.setVisibility(View.VISIBLE);
             mLoggedInStatusTextView.setVisibility(View.GONE);
         }
         this.authData = authData;
